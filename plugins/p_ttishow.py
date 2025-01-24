@@ -15,8 +15,8 @@ async def welcome(bot, message):
     if message.new_chat_member and not message.old_chat_member:
         if message.new_chat_member.user.id == temp.ME:
             buttons = [[
-                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=UPDATES_LINK),
-                InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url=SUPPORT_LINK)
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url='https://t.me/preethamdg0'),
+                InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/+FOxMauI5h880ODA1')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             user = message.from_user.mention if message.from_user else "Dear"
