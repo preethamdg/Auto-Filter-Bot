@@ -28,8 +28,8 @@ async def start(client, message):
         wish = get_wish()
         user = message.from_user.mention if message.from_user else "Dear"
         btn = [[
-            InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('💡 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💡', url=SUPPORT_LINK)
+            InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url='https://t.me/preethamdg0'),
+            InlineKeyboardButton('💡 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💡', url='https://t.me/+FOxMauI5h880ODA1')
         ]]
         await message.reply(text=f"<b>ʜᴇʏ {user}, <i>{wish}</i>\nʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ??</b>", reply_markup=InlineKeyboardMarkup(btn))
         return 
@@ -46,8 +46,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('ℹ️ ᴜᴘᴅᴀᴛᴇs', url=UPDATES_LINK),
-            InlineKeyboardButton('🧑‍💻 sᴜᴘᴘᴏʀᴛ', url=SUPPORT_LINK)
+            InlineKeyboardButton('ℹ️ ᴜᴘᴅᴀᴛᴇs', url='https://t.me/preethamdg0'),
+            InlineKeyboardButton('🧑‍💻 sᴜᴘᴘᴏʀᴛ', url='https://t.me/+FOxMauI5h880ODA1')
         ],[
             InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
